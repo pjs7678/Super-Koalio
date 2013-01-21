@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21430E3C16AC445500E108BF /* CCNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21430E3A16AC445400E108BF /* CCNumber.cpp */; };
 		A601877F169B08220054D799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A601877E169B08220054D799 /* QuartzCore.framework */; };
 		A6018781169B08220054D799 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6018780169B08220054D799 /* OpenGLES.framework */; };
 		A6018783169B08220054D799 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6018782169B08220054D799 /* OpenAL.framework */; };
@@ -260,8 +259,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		21430E3A16AC445400E108BF /* CCNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNumber.cpp; sourceTree = "<group>"; };
-		21430E3B16AC445500E108BF /* CCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNumber.h; sourceTree = "<group>"; };
+		21F6CDCD16ACDBAB00C1152A /* CCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNumber.h; sourceTree = "<group>"; };
+		21F6CDCE16ACDFF900C1152A /* CCValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCValue.h; sourceTree = "<group>"; };
 		A601877A169B08220054D799 /* SuperKoalio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperKoalio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A601877E169B08220054D799 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A6018780169B08220054D799 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1842,8 +1841,8 @@
 				A6018ACC169B088D0054D799 /* GameLevelLayer.h */,
 				A6018ACE169B09E60054D799 /* Player.cpp */,
 				A6018ACF169B09E60054D799 /* Player.h */,
-				21430E3A16AC445400E108BF /* CCNumber.cpp */,
-				21430E3B16AC445500E108BF /* CCNumber.h */,
+				21F6CDCD16ACDBAB00C1152A /* CCNumber.h */,
+				21F6CDCE16ACDFF900C1152A /* CCValue.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2148,7 +2147,6 @@
 				A6018AAD169B08290054D799 /* AppDelegate.cpp in Sources */,
 				A6018ACD169B088D0054D799 /* GameLevelLayer.cpp in Sources */,
 				A6018AD0169B09E70054D799 /* Player.cpp in Sources */,
-				21430E3C16AC445500E108BF /* CCNumber.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

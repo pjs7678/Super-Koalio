@@ -8,6 +8,9 @@
 
 #include "GameLevelLayer.h"
 #include "CCNumber.h"
+#include "CCValue.h"
+
+using namespace cocos2d_extensions;
 
 CCScene* GameLevelLayer::scene()
 {
@@ -92,10 +95,12 @@ CCArray* GameLevelLayer::getSurroundingTilesAtPosition(CCPoint position, CCTMXLa
         CCRect tileRect = this->tileRectFromTileCoord(tilePos);
 
         CCDictionary *tileDict = CCDictionary::create();
-        tileDict->setObject(CCNumber::create(tgid), std::string("gid"));
-        tileDict->setObject(CCNumber::create(tileRect.origin.x), std::string("x"));
-        tileDict->setObject(CCNumber::create(tileRect.origin.y), std::string("y"));
-        tileDict
+        
+        tileDict->setObject(CCNumber<int>::numberWithValue(tgid), std::string("gid"));
+        tileDict->setObject(CCNumber<double>::numberWithValue(tileRect.origin.x), std::string("x"));
+        tileDict->setObject(CCNumber<double>::numberWithValue(tileRect.origin.y), std::string("y"));
+        
+        
     }
 }
 
